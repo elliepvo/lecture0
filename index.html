@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="style.css">
 
           <style>
+          * {
+            box-sizing: border-box;
+          }
             body {
 
               background-color: lightgray;
@@ -21,10 +24,34 @@
             h1 .special-color {
               color: black;
             }
-            div.gallery img {
-
+            div.gallery  {
+              float: left;
+              width: 33.33%;
+              padding: 5px;
             }
 
+            .responsive {
+              padding: 0 6px;
+              float: left;
+              width: 20%;
+            }
+            @media only screen and (max-width: 700px) {
+              .responsive {
+                  width: 49.99999%;
+                  margin: 6px 0;
+              }
+            }
+
+          @media only screen and (max-width: 500px) {
+              .responsive {
+                  width: 100%;
+              }
+            }
+            .clearfix:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
 
           </style>
     </head>
@@ -41,6 +68,8 @@
         look like a chicken's egg.
       <p> Hence the <q>egg</q> in <em><u>egg</em></u>plant. </p>
 
+
+<div class="clearfix">
       <div class="responsive">
         <div class="gallery">
 
@@ -61,7 +90,20 @@
       </div>
     </div>
 
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="https://njoutdoors.files.wordpress.com/2010/07/eggplant1.jpg">
+          <img src="https://njoutdoors.files.wordpress.com/2010/07/eggplant1.jpg"
+          alt="Eggplant Variety" width="300" height="200">
+        </a>
+      </div>
+    </div>
 
+  
+    <p><h2><center>124</h2></p></center>
+
+
+</div>
 
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
