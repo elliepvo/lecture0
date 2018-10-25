@@ -1,80 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <!-- Required meta tags -->
-       <meta charset="utf-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>My Webpage</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-          <style>
-          * {
-            box-sizing: border-box;
-          }
-            body {
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-              background-color: lightgray;
-              padding: 0 6px;
-            }
-            h1 {
-              color: white;
-            }
-            h1 .special-color {
-              color: black;
-            }
-            .gallery  {
-              float: left;
-              width: 33.33%;
-              padding: 5px;
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-            }
-            .clearfix:after {
-              content: "";
-              display: table;
-              clear: both;
-            }
+      body {
+        background-color: lightgray;
+        padding: 0 6px;
+      }
 
-          </style>
-    </head>
-    <body>
+      h1 {
+        color: white;
+      }
 
-      <h1> Egg<span class="special-color">plants</span></h1>
+      h1 .special-color {
+        color: black;
+      }
 
-      <p> Although <em><strong>purple</em></strong> is the general
-        color that comes to mind when the word <em>eggplant</em>
-        is used, purple is not the only color of eggplants.
-        Like all plants, eggplants come in different cultivars of
-        shape, size, and color. First recorded in 1763, the word itself
-        <q>eggplant</q> refers to the <em>white cultivars</em>, which
-        look like a chicken's egg.
+      .gallery {
+        float: left;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 5px;
+      }
+
+      .gallery1 {
+       /*  float: center; */
+        max-width: 100%;
+        max-height: 100%;
+        padding: 5px;
+      }
+
+      img {
+        height: 200px;
+        width: 500px;
+      }
+
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.9%;
+      }
+
+      .responsive1 {
+        padding: 0 6px;
+      /* float: center; */
+        width: 24.9%;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 50%;
+          margin: 6px 0;
+        }
+      }
+
+@media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+
+      .row {
+        flex: 50%;
+        display: flex;
+        flex-flow: row wrap;
+
+        padding: 1px;
+        border: 4px solid black;
+
+      }
+
+      .column {
+        flex: 50%;
+        max-height: 50%;
+        max-width: 50%;
+        padding: 1px;
+        border: 1px solid green;
+
+
+      }
+
+      .column img {
+        margin: 2px;
+        position: relative;
+
+      }
+
+      /* .clearfix:after {
+        content: "";
+      display: table;
+        clear: both;
+      }
+       */
+
+    </style>
+  </head>
+
+  <body>
+
+    <h1> Egg<span class="special-color">plants</span></h1>
+
+    <p> Although <em><strong>purple</strong></em> is the general color that comes to mind when the word <em>eggplant</em> is used, purple is not the only color of eggplants. Like all plants, eggplants come in different cultivars of shape, size, and color.
+      First recorded in 1763, the word itself
+      <q>eggplant</q> refers to the <em>white cultivars</em>, which look like a chicken's egg.
       <p> Hence the <q>egg</q> in <em><u>egg</em></u>plant. </p>
 
       <div class="clearfix">
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/0/08/Eggplant_with_chicken_eggs.jpg">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Eggplant_with_chicken_eggs.jpg"
+              alt="Egg vs Plant" style="width:100%">
+            </a>
+          </div>
+        </div>
 
-        <div class="gallery">
-          <img src="https://bonnieplants.com/wp-content/uploads/white-eggplant.jpg"
-           alt="white eggs" width="100%">
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="https://njoutdoors.files.wordpress.com/2010/07/eggplant1.jpg">
+              <img src="https://njoutdoors.files.wordpress.com/2010/07/eggplant1.jpg"
+              alt="Eggplant Variety" style="width:100%">
+            </a>
+          </div>
         </div>
-        <div class="gallery">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Eggplant_with_chicken_eggs.jpg"
-          alt="egg vs plant" width="100%" height="100%">
-        </div>
-        <div class="gallery">
-          <img src="https://njoutdoors.files.wordpress.com/2010/07/eggplant1.jpg"
-          alt="Eggplant Variety" alt="variety" width="400px" height="400px">
-        </div>
+
+      </div>
+
+      <h2>So what's the difference?</h2>
+
+
+      <ul>
+        <li>Taste wise: the <em>thickness</em> of the skin and the amount of <em>seeds</em> correlates to the bitterness of the plant.</li>
+        <li>The more seeds there are, the more bitter it is.</li>
+        <li><strong>Chinese</strong> and <strong>Japanese</strong> eggplants have <strong><em>less</em></strong> seeds and are, therefore, <strong><em>less</em></strong> bitter.</li>
+      </ul>
+
+      <div class="responsive1">
+
+        <div class="gallery1">
+
+          <a target="_blank" href="https://www.thepacker.com/sites/default/files/Vineland-greenhouse-Asian-eggplant.jpg">
+          <img src="https://www.thepacker.com/sites/default/files/Vineland-greenhouse-Asian-eggplant.jpg" alt="asian eggplants" style="width:100%">
+</a>
+
+
         </div>
       </div>
 
-        <h2>djkasdsak</h2>
+      <p>
+        They are also skinnier. Amongst the eggplant varieties, the Asian horiculture of eggplants dominate with the largest variety of cultivars (in terms of color, shape, and size), compares to the more rounded or egg-shaped plant most people are used to.
+      </p>
 
-        <p> kjsklfjkdlsjfkdsljfkdjf.
-          djfdjfklsdklfjdlksjflsdf
-          dfjsdnfjkn. </p>
+      <h3>
+        Different types of eggplants:
+      </h3>
 
-</div>
+    <div class="responsive">
+
+        <div class="row">
+          <div class="column">
+
+            <a target="_blank" href="http://www.plantnames.unimelb.edu.au/new/Sorting/CATALOGUE/Small-Thai-eggplants.jpg">
+            <figure><img src="http://www.plantnames.unimelb.edu.au/new/Sorting/CATALOGUE/Small-Thai-eggplants.jpg" alt="asian variety" style="width:100%">
+</a>
+              <figcaption>Basic sizes in Asian eggplants: long, round, egg-shaped, peas-sized. </figcaption>
+
+            </figure>
+          </div>
+          <div class="column">
+
+          <a target="_blank" href="http://chedithai.com.au/wordpress/wp-content/uploads/2016/06/pea-sized-eggplant-good-in-green-Thai-curries-0.jpg">
+          <img src="http://chedithai.com.au/wordpress/wp-content/uploads/2016/06/pea-sized-eggplant-good-in-green-Thai-curries-0.jpg" style="width:100%">
+</a>
+        </div>
+      </div>
+      </div>
+
 
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -83,5 +196,6 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    </body>
+  </body>
+
 </html>
