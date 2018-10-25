@@ -20,7 +20,7 @@ h1 .special-color {
   float: left;
   max-width: 100%;
   max-height: 100%;
-  padding: 5px;
+  padding: 2px;
 }
 
 img {
@@ -31,7 +31,7 @@ img {
 .responsive {
   padding: 0 6px;
   float: left;
-  width: 24.9%;
+  width: 30%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -49,21 +49,20 @@ img {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
   padding: 1px;
   border: 4px solid black;
 }
 
 .column {
   flex: 50%;
-  /* max-height: 50%; */
+  padding: 8px;
   max-width: 50%;
-  padding: 1px;
   border: 1px solid green;
 }
 
 .column img {
-  margin: 2px;
-  position: relative;
+  padding: 4px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
